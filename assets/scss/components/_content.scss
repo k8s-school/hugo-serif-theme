@@ -19,12 +19,14 @@
   }
   h1 {
     font-family: $font-family-heading;
-    line-height: 1.2;
+    line-height: 1.4;
     font-weight: $font-weight-light;
     @include media-breakpoint-up(md) {
       line-height: 1.2;
       font-weight: $font-weight-light;
     }
+    border-bottom: solid 2px;
+    margin-bottom: 42px;
   }
   h2 {
     font-family: $font-family-heading;
