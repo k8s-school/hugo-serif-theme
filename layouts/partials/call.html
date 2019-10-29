@@ -1,8 +1,16 @@
 <div class="call">
   <div class="call-box-top">
-      <div class="call-phone"><strong>Téléphone: </strong> {{ .Site.Data.contact.phone }} </div>
+      <div class="call-phone"><strong>Tél: </strong>
+      <a href="tel:{{ .Site.Data.contact.phone }}" >{{ .Site.Data.contact.phone }}</a>
+      </div>
+      <div class="call-phone"><strong>Tél: </strong>
+      <a href="tel:{{ .Site.Data.contact.phone1 }}" >{{ .Site.Data.contact.phone1 }}</a>
+      </div>
+      <div class="call-phone"><strong>Mail: </strong>
+          <a href="mailto:{{ .Site.Data.contact.email }}?subject=Demande d'inscription pour formation k8s">{{ .Site.Data.contact.email }}</a>
+      </div>
   </div>
   <div class="call-box-bottom">
-      <a href="{{ .Site.Data.contact.email }}" class="button">Formulaire de contact</a>
+      <a href="{{ .Site.Data.contact.form }}" class="button">Formulaire de contact</a>
   </div>
 </div>

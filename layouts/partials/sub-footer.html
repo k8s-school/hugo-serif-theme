@@ -4,9 +4,12 @@
       <div class="col-12">
         <div class="sub-footer-inner">
           <ul>
-            <li><strong>Téléphone: </strong>{{ .Site.Data.contact.phone }}</li>
-            <li><strong>Contact: </strong><a href="{{ .Site.Data.contact.email }}">
-                Formulaire</a></li>
+            <li><strong>Tél: </strong>
+            <a href="tel:{{ .Site.Data.contact.phone }}" >{{ .Site.Data.contact.phone }}</a></li>
+            <li><strong>Tél: </strong>
+            <a href="tel:{{ .Site.Data.contact.phone1 }}" >{{ .Site.Data.contact.phone1 }}</a></li>
+            <li><strong>Contact: </strong><a href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email }}</a></li>
+            <li><strong>Formulaire: </strong><a href="{{ .Site.Data.contact.form }}">Cliquer ici</a></li>
           </ul>
           <ul>
             <li class="zerostatic"><a
